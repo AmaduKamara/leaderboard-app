@@ -1,0 +1,13 @@
+body {
+  background-color: bisque;
+}
+
+.hello {
+  width: 600px;
+  height: 600px;
+  color: red;
+  background: url("./laptop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
