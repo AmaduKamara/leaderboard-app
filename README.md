@@ -1,11 +1,9 @@
-#  Leaderboard List App
+# Leaderboard List App
 
 "To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.
 In this project, I build JavaScript project for the Leaderboard list app, using webpack and ES6 features.
 
 ## App Screenshot
-
-
 
 ## Built With
 
@@ -16,7 +14,6 @@ In this project, I build JavaScript project for the Leaderboard list app, using 
 - ESLint
 
 - Webpack
-
 
 ## Live Demo
 
