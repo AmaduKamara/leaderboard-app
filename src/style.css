@@ -1,13 +1,5 @@
-body {
-  background-color: bisque;
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 
-.hello {
-  width: 600px;
-  height: 600px;
-  color: red;
-  background: url("./laptop.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+body {
+  font-family: 'Open Sans', sans-serif;
 }

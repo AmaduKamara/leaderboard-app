@@ -7,6 +7,47 @@
     <title>Leaderboard App</title>
   </head>
   <body>
-    <h1>Leaderboard App</h1>
+    <main class="container mx-auto bg-white shadow-lg rounded mt-16">
+      <div class="flex w-full p-16">
+        <div class="w-8/12">
+          <div>
+            <h1 class="font-semibold text-4xl">Leaderboard App</h1>
+          </div>
+          <div class="flex justify-between align-items-center mt-12 mb-4">
+            <h2 class="font-semibold text-2xl">Recent Scores</h2>
+            <button type="button" class="border py-2 px-12">Refresh</button>
+          </div>
+          <div class="w-full border p-6">
+            <ul>
+              <li class="my-2 font-semibold">Amadu Kamara: 100</li>
+              <li class="my-2 font-semibold">Samuel Amkam: 98</li>
+              <li class="my-2 font-semibold">Web Avenger 97</li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-20 mx-10 w-4/12">
+          <h2 class="font-semibold text-2xl">Add your score</h2>
+          <form class="mt-4">
+            <div class="mb-3">
+              <input
+                type="text"
+                placeholder="Your name"
+                class="border py-2 px-4 w-full"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="text"
+                placeholder="Your score"
+                class="border py-2 px-4 w-full"
+              />
+            </div>
+            <div class="flex justify-end">
+              <button type="submit" class="border py-2 px-12">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
