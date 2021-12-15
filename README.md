@@ -11,6 +11,8 @@ In this project, I build JavaScript project for the Leaderboard list app, using 
 
 - HTML and CSS
 
+- Tailwind CSS
+
 - JavaScript
 
 - ESLint
