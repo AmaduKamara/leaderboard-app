@@ -19,10 +19,6 @@ In this project, I build JavaScript project for the Leaderboard list app, using 
 
 - Webpack
 
-## Live Demo
-
-<a href="#">To-do List</a>
-
 ## Getting Started
 
 In this project, I was asked to build a JavaScript project for the Leaderboard list app, using webpack and ES6 features.
