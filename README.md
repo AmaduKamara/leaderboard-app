@@ -5,7 +5,7 @@ In this project, I build JavaScript project for the Leaderboard list app, using 
 
 ## App Screenshot
 
-![image](https://user-images.githubusercontent.com/50941074/145993259-3bf684d5-72a8-48a7-ae72-4f44159da422.png)
+![image](https://user-images.githubusercontent.com/50941074/146265895-d96a6fdd-460f-490b-97c7-cb26161516c7.png)
 
 
 ## Built With
