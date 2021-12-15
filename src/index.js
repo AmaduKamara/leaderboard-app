@@ -8,7 +8,7 @@ const load = async () => {
   const results = await getData();
 
   results.result.forEach((result) => {
-    leaderboard.innerHTML += `<li class="my-2 font-semibold rounded my-3 p-3 shadow">
+    leaderboard.innerHTML += `<li class="my-2 font-semibold rounded my-4 p-3 shadow border-teal-400 border-l-4">
         ${result.user}: ${result.score}
       </li>`;
   });
@@ -33,7 +33,7 @@ form.addEventListener('submit', async (e) => {
 
   await createGame(name, score);
   form.reset();
-  leaderboard.innerHTML += `<li class="my-2 font-semibold rounded my-3 p-3 shadow">
+  leaderboard.innerHTML += `<li class="my-2 font-semibold rounded my-4 p-3 shadow border-teal-400 border-l-4">
     ${name}: ${score}
   </li>`;
 });

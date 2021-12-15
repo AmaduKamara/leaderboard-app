@@ -7,10 +7,10 @@ export const createGame = async (user, score) => {
     user,
     score,
   };
-  await axios.post(`${baseUrl}M1KEeRFwRke7lKfU6WKP/scores`, requestBody);
+  await axios.post(`${baseUrl}Ra6sv7sHmndIiLZ3k9Wu/scores`, requestBody);
 };
 
 export const getData = async () => {
-  const response = await axios.get(`${baseUrl}M1KEeRFwRke7lKfU6WKP/scores`);
+  const response = await axios.get(`${baseUrl}Ra6sv7sHmndIiLZ3k9Wu/scores`);
   return response.data;
 };
