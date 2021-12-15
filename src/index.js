@@ -19,7 +19,7 @@ load();
 
 // Refresh data upon clicking of refresh button
 refreshBtn.addEventListener('click', async () => {
-  location.reload();
+  window.location.reload();
 });
 
 // Create new leader

@@ -1,7 +1,6 @@
 import axios from 'axios';
 
-const baseUrl =
-  'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
+const baseUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
 
 export async function createGame(user, score) {
   const requestBody = {
@@ -13,8 +12,7 @@ export async function createGame(user, score) {
 
 export async function getData() {
   const response = await axios.get(`${baseUrl}5H3ZhzHBptAjLZzd7hXU/scores`);
-  const data = response.data;
-  return data;
+  return response.data;
 }
 
 export default {
