@@ -3,23 +3,16 @@ import axios from 'axios';
 const baseUrl =
   'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
 
-export async function createGame(name, score) {
+export async function createGame(user, score) {
   const requestBody = {
-    name,
+    user,
     score,
   };
-  await axios
-    .post(baseUrl, requestBody)
-    .then((response) => {
-      console.log(response.data);
-    })
-    .catch((error) => {
-      log.error(error.response.data);
-    });
+  await axios.post(`${baseUrl}5H3ZhzHBptAjLZzd7hXU/scores`, requestBody);
 }
 
 export async function getData() {
-  const response = await axios.get(`${baseUrl}eb27NxxL0PueqKSqpULU/scores`);
+  const response = await axios.get(`${baseUrl}5H3ZhzHBptAjLZzd7hXU/scores`);
   const data = response.data;
   return data;
 }

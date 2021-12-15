@@ -31,11 +31,15 @@ refreshBtn.addEventListener('click', async () => {
 // Create new leader
 const form = document.getElementById('leaderborad-form');
 
-form.addEventListener('submit', (e) => {
+form.addEventListener('submit', async (e) => {
   e.preventDefault();
 
   const name = document.getElementById('name').value;
   const score = document.getElementById('score').value;
 
-  createGame(name, score);
+  await createGame(name, score);
+  form.reset();
+  leaderboard.innerHTML += `<li class="my-2 font-semibold rounded my-3 p-3 shadow">
+        ${name}: ${score}
+      </li>`;
 });
