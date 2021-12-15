@@ -4,16 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet"
+    />
     <title>Leaderboard App</title>
   <script defer src="main.js"></script></head>
   <body>
-    <main>
-      <h1>Leaderboard App</h1>
-      <div>
-        <h2>Leaderboard list</h2>
-      </div>
-      <div>
-        <h2>Add person</h2>
+    <main class="container mx-auto bg-white shadow-lg rounded mt-16">
+      <div class="flex w-full p-16">
+        <div class="w-8/12">
+          <div>
+            <h1 class="font-semibold text-4xl">Leaderboard App</h1>
+          </div>
+          <div class="flex justify-between align-items-center mt-12 mb-4">
+            <h2 class="font-semibold text-2xl">Recent Scores</h2>
+            <button type="button" class="border py-2 px-12 " id="refresh">
+              Refresh
+            </button>
+          </div>
+          <div class="w-full border p-6">
+            <ul class="leaderboard-list"></ul>
+          </div>
+        </div>
+        <div class="mt-20 mx-10 w-4/12">
+          <h2 class="font-semibold text-2xl">Add your score</h2>
+          <form class="mt-4" id="leaderborad-form">
+            <div class="mb-3">
+              <input
+                type="text"
+                placeholder="Your name"
+                class="border py-2 px-4 w-full rounded"
+                id="name"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="text"
+                placeholder="Your score"
+                class="border py-2 px-4 w-full rounded"
+                id="score"
+                required
+              />
+            </div>
+            <div class="flex justify-end">
+              <button type="submit" class="border py-2 px-12">Submit</button>
+            </div>
+          </form>
+        </div>
       </div>
     </main>
   </body>

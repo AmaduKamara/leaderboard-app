@@ -4,33 +4,79 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet"
+    />
     <title>Leaderboard App</title>
   </head>
-  <body>
-    <main class="container mx-auto bg-white shadow-lg rounded mt-16">
-      <div class="flex w-full p-16">
-        <div class="w-8/12">
+  <body class="bg-gradient-to-r from-cyan-500 to-blue-500">
+    <main
+      class="container mx-auto shadow-xl rounded-md my-24 bg-gray-100"
+    >
+      <div
+        class="
+          flex flex-col
+          md:flex-row
+          w-full
+          p-16
+          justify-center
+          items-center
+          md:items-start
+        "
+      >
+        <div class="md:w-3/5 w-full h-3/4">
           <div>
-            <h1 class="font-semibold text-4xl">Leaderboard App</h1>
+            <h1
+              class="
+                font-semibold
+                text-4xl
+                md:text-5xl
+                text-teal-700
+                drop-shadow-xl
+                font-bold
+              "
+            >
+              Leaderboard App
+            </h1>
           </div>
           <div class="flex justify-between align-items-center mt-12 mb-4">
-            <h2 class="font-semibold text-2xl">Recent Scores</h2>
-            <button type="button" class="border py-2 px-12" id="refresh">
+            <h2 class="font-semibold text-2xl text-teal-600 font-bold">
+              Recent Scores
+            </h2>
+            <button
+              type="button"
+              class="
+                border
+                py-2
+                md:px-12
+                px-5
+                border-teal-500
+                rounded-md
+                shadow-lg
+                text-teal-600
+                hover:bg-teal-600 hover:text-teal-100
+                shadow
+                text-lg
+              "
+              id="refresh"
+            >
               Refresh
             </button>
           </div>
-          <div class="w-full border p-6">
+          <div class="w-full shadow-lg drop-shadow-xl rounded-md p-6 bg-white">
             <ul class="leaderboard-list"></ul>
           </div>
         </div>
-        <div class="mt-20 mx-10 w-4/12">
-          <h2 class="font-semibold text-2xl">Add your score</h2>
+
+        <div class="mt-20 mx-5 md:w-2/5 w-full">
+          <h2 class="font-semibold text-2xl text-teal-400">Add your score</h2>
           <form class="mt-4" id="leaderborad-form">
             <div class="mb-3">
               <input
                 type="text"
                 placeholder="Your name"
-                class="border py-2 px-4 w-full rounded"
+                class="border py-3 focus:outline-teal-500 px-4 w-full rounded"
                 id="name"
                 required
               />
@@ -39,13 +85,28 @@
               <input
                 type="text"
                 placeholder="Your score"
-                class="border py-2 px-4 w-full rounded"
+                class="border py-3 focus:outline-teal-500 px-4 w-full rounded"
                 id="score"
                 required
               />
             </div>
             <div class="flex justify-end">
-              <button type="submit" class="border py-2 px-12">Submit</button>
+              <button
+                type="submit"
+                class="
+                  py-3
+                  text-xl
+                  mt-2
+                  rounded
+                  shadow-xl
+                  px-16
+                  bg-teal-500
+                  text-white
+                  hover:bg-teal-600
+                "
+              >
+                Submit
+              </button>
             </div>
           </form>
         </div>
