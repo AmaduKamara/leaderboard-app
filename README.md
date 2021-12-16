@@ -8,6 +8,11 @@ In this project, I build JavaScript project for the Leaderboard list app, using 
 ![image](https://user-images.githubusercontent.com/50941074/146268055-a89ed0bf-f990-486a-a9a1-dddc6d9066a7.png)
 
 
+## Live Demo
+
+[View Live Demo](https://youthful-mclean-204598.netlify.app/)
+
+
 ## Built With
 
 - HTML and CSS
