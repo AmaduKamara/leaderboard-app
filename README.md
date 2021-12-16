@@ -12,7 +12,6 @@ In this project, I build JavaScript project for the Leaderboard list app, using 
 
 [View Live Demo](https://youthful-mclean-204598.netlify.app/)
 
-
 ## Built With
 
 - HTML and CSS
